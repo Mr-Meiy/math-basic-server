@@ -51,12 +51,12 @@ app.get("/requestProblems", (req, res) => {
         max = 100,
         addition = [],
         subtraction = []
-    for (i = 1; i <= 20; i++) {
+    for (i = 1; i <= 50; i++) {
         var num1 = getRandom(min, max),
             num2 = getRandom(min, max),
             add = num1 + num2,
             sub = num1 - num2
-        addition.push([num1 + " + " + num2, add])
+        //addition.push([num1 + " + " + num2, add])
         addition.push([num1 + " - " + num2, sub])
             //subtraction.push([num1 + " - " + num2, sub])
     }
